@@ -1,5 +1,3 @@
-import { Link } from "react-scroll";
-
 function App() {
   return (
     <div className="App">

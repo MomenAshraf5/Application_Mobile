@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./Header.css";
-import "./Header.js";
 import "./logo.css";
 
 import App from "./App";
