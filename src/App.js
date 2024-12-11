@@ -4,6 +4,7 @@ function App() {
       <Background />
       <Header />
       <Contast />
+      <CustomerSection />
       <Form />
     </div>
   );
@@ -75,33 +76,71 @@ const Contast = () => {
 };
 
 const Form = () => {
-  //   return (
-  //     <div className="form-section">
-  //       <h2 className="form-title">Get in Touch</h2>
-  //       <p className="form-description">
-  //         Fill out the form below, and our team will get back to you shortly.
-  //       </p>
-  //       <form className="contact-form">
-  //         <div className="form-group">
-  //           <label htmlFor="name">Name</label>
-  //           <input type="text" id="name" placeholder="Your Full Name" />
-  //         </div>
-  //         <div className="form-group">
-  //           <label htmlFor="email">Email</label>
-  //           <input type="email" id="email" placeholder="Your Email Address" />
-  //         </div>
-  //         <div className="form-group">
-  //           <label htmlFor="phone">Phone</label>
-  //           <input type="tel" id="phone" placeholder="Your Phone Number" />
-  //         </div>
-  //         <div className="form-group">
-  //           <label htmlFor="message">Message</label>
-  //           <textarea id="message" rows="5" placeholder="Your Message"></textarea>
-  //         </div>
-  //         <button type="submit" className="submit-button">
-  //           Send Message
-  //         </button>
-  //       </form>
-  //     </div>
-  //   );
+  return (
+    <div className="form-section">
+      <h2 className="form-title">Get in Touch</h2>
+      <p className="form-description">
+        Fill out the form below, and our team will get back to you shortly.
+      </p>
+      <form className="contact-form">
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" placeholder="Your Full Name" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" placeholder="Your Email Address" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="Your Phone Number" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" className="submit-button">
+          Send Message
+        </button>
+      </form>
+    </div>
+  );
+};
+
+const CustomerSection = () => {
+  return (
+    <div className="customer-section">
+      <div className="image-container">
+        <img
+          src="images/2.jpeg"
+          alt="Customer Support Team"
+          className="customer-image"
+        />
+        <div className="cta-overlay">
+          <span className="cta-text">Go with More than a Call!</span>
+        </div>
+      </div>
+      <div className="text-container">
+        <h3 className="section-subtitle">Customer Fit</h3>
+        <h1 className="section-title">Purely Customer Focused</h1>
+        <p>
+          Starting with a strong foundation of more than thirteen companies
+          delivering an outstanding Customer Experience and only striving for
+          better, CXperts was founded.
+        </p>
+        <p>
+          CXperts is a leading global provider of customer experience services
+          and solutions. We dedicate our work to fulfilling your requirements
+          and customizing our services to match your needs.
+        </p>
+        <p>
+          We are professionals, committed, focused, and driven to ensure that
+          you perfectly match your needs.
+        </p>
+        <a href="#about-us" className="about-us-button">
+          About Us
+        </a>
+      </div>
+    </div>
+  );
 };
