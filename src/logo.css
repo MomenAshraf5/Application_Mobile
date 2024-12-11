@@ -1,0 +1,29 @@
+/* src/Logo.css */
+.logo-modern-tech {
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.logo-modern-tech .co {
+  font-size: 40px;
+  font-weight: 300;
+  color: #b8871e;
+}
+
+.logo-modern-tech .vertex {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2563eb;
+  text-transform: uppercase;
+}
+
+/* App.css */
+.pfpf {
+  width: 50px; /* Adjust size */
+  height: 50px;
+  display: block;
+  margin: 0px;
+  padding: 0px 50px;
+}

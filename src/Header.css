@@ -1,0 +1,175 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.App {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fullscreen Background */
+.background {
+  background-image: url("D:\project-call-center\call-center\public\images\1.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensures it stays behind all content */
+}
+
+/* Header.css */
+.header {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: none;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb; /* Blue color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #1d4ed8; /* Darker blue on hover */
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 10px;
+}
+
+.nav ul li a {
+  color: #4b5563; /* Dark gray */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #2563eb; /* Blue on hover */
+}
+
+.cta a {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+  background-color: #1d4ed8; /* Slightly darker blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+/* Form Section Styling */
+.form-section {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-description {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
