@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 function App() {
   return (
     <div className="App">
@@ -17,8 +19,33 @@ const Background = () => {
 };
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        // Hide header when scrolling down
+        setIsVisible(false);
+      } else {
+        // Show header when scrolling up
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="header">
+    <header className={`header ${isVisible ? "visible" : "hidden"}`}>
       <div className="container">
         <div className="logo">
           <a href="/">
