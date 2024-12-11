@@ -1,8 +1,11 @@
+import { Link } from "react-scroll";
+
 function App() {
   return (
     <div className="App">
       <Background />
       <Header />
+      <Contast />
       <Form />
     </div>
   );
@@ -59,34 +62,48 @@ const Header = () => {
   );
 };
 
-const Form = () => {
+const Contast = () => {
   return (
-    <div className="form-section">
-      <h2 className="form-title">Get in Touch</h2>
-      <p className="form-description">
-        Fill out the form below, and our team will get back to you shortly.
-      </p>
-      <form className="contact-form">
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" placeholder="Your Full Name" />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="Your Email Address" />
-        </div>
-        <div className="form-group">
-          <label htmlFor="phone">Phone</label>
-          <input type="tel" id="phone" placeholder="Your Phone Number" />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Your Message"></textarea>
-        </div>
-        <button type="submit" className="submit-button">
-          Send Message
-        </button>
-      </form>
+    <div className="hero-section">
+      <div className="overlay">
+        <p className="subtitle">MODERN OUTSOURCING COMPANY</p>
+        <h1 className="main-title">Legendary Customer Experience!</h1>
+        <a href="#discover-more" className="cta-button">
+          Discover More
+        </a>
+      </div>
     </div>
   );
+};
+
+const Form = () => {
+  //   return (
+  //     <div className="form-section">
+  //       <h2 className="form-title">Get in Touch</h2>
+  //       <p className="form-description">
+  //         Fill out the form below, and our team will get back to you shortly.
+  //       </p>
+  //       <form className="contact-form">
+  //         <div className="form-group">
+  //           <label htmlFor="name">Name</label>
+  //           <input type="text" id="name" placeholder="Your Full Name" />
+  //         </div>
+  //         <div className="form-group">
+  //           <label htmlFor="email">Email</label>
+  //           <input type="email" id="email" placeholder="Your Email Address" />
+  //         </div>
+  //         <div className="form-group">
+  //           <label htmlFor="phone">Phone</label>
+  //           <input type="tel" id="phone" placeholder="Your Phone Number" />
+  //         </div>
+  //         <div className="form-group">
+  //           <label htmlFor="message">Message</label>
+  //           <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+  //         </div>
+  //         <button type="submit" className="submit-button">
+  //           Send Message
+  //         </button>
+  //       </form>
+  //     </div>
+  //   );
 };
